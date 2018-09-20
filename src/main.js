@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import 'css/frozenui.css'
 import '@/assets/css/index.styl'
 
 Vue.config.productionTip = false

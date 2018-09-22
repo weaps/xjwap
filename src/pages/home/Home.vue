@@ -1,47 +1,24 @@
 <template>
   <div>
     <div class="header">Home</div>
-    <section class="ui-panel ui-grid ui-grid-trisect">
-      <h2 class="ui-arrowlink">猜你喜欢<span class="ui-panel-subtitle">1328条</span></h2>
-      <ul>
-        <li>
-          <div class="ui-img-vertical">
-            <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
-          </div>
-          <div class="ui-grid-info ui-border-r">
-            <h4 class="ui-nowrap-multi">我是主标题</h4>
-            <p class="ui-nowrap">这里是副标题</p>
-          </div>
-        </li>
-        <li>
-          <div class="ui-img-vertical">
-            <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
-          </div>
-          <div class="ui-grid-info ui-border-r">
-            <h4 class="ui-nowrap-multi">我是主标题</h4>
-            <p class="ui-nowrap">这里是副标题</p>
-          </div>
-        </li>
-        <li>
-          <div class="ui-img-vertical">
-            <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
-          </div>
-          <div class="ui-grid-info ui-border-r">
-            <h4 class="ui-nowrap-multi">我是主标题</h4>
-            <p class="ui-nowrap">这里是副标题</p>
-          </div>
-        </li>
-      </ul>
-      <div class="ui-panel-more ui-border-tb">
-        <span class="ui-arrowlink">查看全部</span>
-      </div>
-    </section>
+    <!--幻灯片-->
+    <swiper-banner></swiper-banner>
+    <!--统计 statistics-->
+    <home-statistics></home-statistics>
   </div>
 </template>
 
 <script>
+import SwiperBanner from 'pages/home/components/swiper/Swiper'
+import HomeStatistics from 'pages/home/components/statistics/Statistics'
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    SwiperBanner,
+    HomeStatistics
+  },
+  methods: {
+  }
 }
 </script>
 

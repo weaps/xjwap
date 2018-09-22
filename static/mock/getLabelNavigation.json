@@ -1,0 +1,57 @@
+{
+  "success": true,
+  "errCode": 0,
+  "errMsg": "返回成功",
+  "data": [
+    {
+      "title": "技术成果",
+      "iconUrl": "icon-jiaoyichenggong",
+      "categoryId": 20040
+    },
+    {
+      "title": "需求信息",
+      "iconUrl": "icon-xuqiutiaocha",
+      "categoryId": 521
+    },
+    {
+      "title": "签约项目",
+      "iconUrl": "icon-shou",
+      "categoryId": 2015
+    },
+    {
+      "title": "总成交额(万元)",
+      "iconUrl": "icon-qiandai",
+      "categoryId": 2144
+    },
+    {
+      "title": "活动场数",
+      "iconUrl": "icon-huodong",
+      "categoryId": 21
+    },
+    {
+      "title": "活动人数",
+      "iconUrl": "icon-ren",
+      "categoryId": 20006
+    },
+    {
+      "title": "专家",
+      "iconUrl": "icon-zhuanjia1",
+      "categoryId": 65
+    },
+    {
+      "title": "合作高校",
+      "iconUrl": "icon-71",
+      "categoryId": 501
+    },
+    {
+      "title": "协作机构",
+      "iconUrl": "icon-jigou",
+      "categoryId": 2023
+    },
+    {
+      "title": "会员人数",
+      "iconUrl": "icon-jiedianhuiyuanmingdan",
+      "categoryId": 20611
+    }
+  ]
+}

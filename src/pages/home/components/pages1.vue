@@ -1,11 +1,11 @@
 <template>
   <ul class="index-tab-list ui-list ui-border-tb">
-    <li v-for="(item, index) of homeListData" :key="index">
+    <li v-for="(item, index) of homeListData" :key="index" class="ui-border-b">
       <div class="ui-list-img-square">
         <span><img :src="item.shopPhoto" alt=""></span>
       </div>
-      <div class="ui-list-info ui-border-t">
-        <h4 class="ui-nowrap">{{item.title}}</h4>
+      <div class="ui-list-info">
+        <h5 class="ui-nowrap-multi">{{item.title}}</h5>
         <p class="ui-nowrap">{{item.brandName}}</p>
       </div>
     </li>
@@ -47,4 +47,8 @@ export default {
       height .9rem
       img
         width 100%
+    .ui-list-info
+      text-align left
+      h5
+        font-size .14rem
 </style>

@@ -10,7 +10,9 @@
         <span>{{tab}}</span>
       </li>
     </ul>
-    <home-pages1 :is="currentTab"></home-pages1>
+    <keep-alive>
+      <home-pages1 :is="currentTab"></home-pages1>
+    </keep-alive>
   </div>
 </template>
 

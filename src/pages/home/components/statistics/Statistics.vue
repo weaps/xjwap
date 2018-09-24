@@ -47,11 +47,11 @@ export default {
   padding .1rem 0
   .ui-col
     height 0
-    padding-bottom 30%
+    padding-bottom 22%
     overflow hidden
     .icon-box
       width 100%
-      padding .12rem 0 .06rem 0
+      padding-top .05rem
       .icon
         &.iconfont
           font-size .25rem

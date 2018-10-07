@@ -57,7 +57,10 @@ export default {
   methods: {
     toProvide (name) {
       let query = {
-        name: name
+        name: name,
+        sdata: '3',
+        projectnName: false,
+        mobile: false
       }
       this.$router.replace({name: 'PublishForm', query: query})
     }

@@ -30,8 +30,10 @@ export default {
     top 0
     width 44px
     height 44px
-  .iconfont
-    color #ffffff
+    background transparent
+    border 0
+    .icon
+      color #ffffff
   h1
     font-size $font-size-medium-x
 </style>

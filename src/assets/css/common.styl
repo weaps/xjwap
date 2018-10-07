@@ -1,8 +1,117 @@
-.header
-  //position fixed
-  //top 0
-  //left 0
-  width 100%
-  height 44px
-  background $color-background-header
-  z-index 10
+@media screen and (max-width: 319px) {
+  html {
+    font-size: 85.33333px
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  html {
+    font-size: 85.33333px
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  html {
+    font-size: 96px
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  html {
+    font-size: 100px
+  }
+}
+
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  html {
+    font-size: 102.4px
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 411px) {
+  html {
+    font-size: 106.66667px
+  }
+}
+
+@media screen and (min-width: 412px) and (max-width: 413px) {
+  html {
+    font-size: 109.86667px
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 110.4px
+  }
+}
+.ui-txt-default {
+  color: #000
+}
+
+.ui-txt-white {
+  color: white
+}
+
+.ui-txt-info {
+  color: #777
+}
+
+.ui-txt-muted {
+  color: #bbb
+}
+
+.ui-txt-warning,.ui-txt-red {
+  color: #ff4222
+}
+
+.ui-txt-feeds {
+  color: #314c83
+}
+
+.ui-txt-highlight {
+  color: #ff8444
+}
+
+.ui-txt-justify {
+  text-align: justify
+}
+
+.ui-txt-justify-one {
+  text-align: justify;
+  overflow: hidden;
+  height: 24px
+}
+
+.ui-txt-justify-one:after {
+  display: inline-block;
+  content: '';
+  overflow: hidden;
+  width: 100%;
+  height: 0
+}
+.text-left
+  text-align left
+.text-center
+  text-align center
+.text-right
+  text-align right
+.list-arrow
+  padding-right .3rem
+  &:after
+    content: " ";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+    -webkit-transform: matrix(.71,.71,-.71,.71,0,0);
+    transform: matrix(.71,.71,-.71,.71,0,0);
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 15px;
+.ui-header
+  ~ .container
+    padding-top: 44px

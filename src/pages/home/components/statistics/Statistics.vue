@@ -1,12 +1,12 @@
 <template>
   <div class="statistics">
-    <ul class="ui-row">
-      <li class="ui-col ui-col-20" v-for="item of discList" :key="item.categoryId">
-        <p class="icon-box">
+    <ul class="">
+      <li class="ui-col" v-for="item of discList" :key="item.categoryId">
+        <div class="box">
           <i class="icon iconfont" :class="item.iconUrl"></i>
-        </p>
-        <p class="num">{{item.categoryId}}</p>
-        <p class="text">{{item.title}}</p>
+          <p class="num">{{item.categoryId}}</p>
+          <p class="text">{{item.title}}</p>
+        </div>
       </li>
     </ul>
   </div>
@@ -45,23 +45,28 @@ export default {
 .statistics
   background #fff
   padding .1rem 0
-  .ui-col
-    height 0
-    padding-bottom 22%
+  ul
+    width 100%
     overflow hidden
-    .icon-box
-      width 100%
-      padding-top .05rem
-      .icon
-        &.iconfont
-          font-size .25rem
-          color: $color-background-header
+  .ui-col
+    float left
+    width 20%
+    height 0
+    padding-bottom 24%
+    overflow hidden
+    .box
+      font-size $font-size-medium-x
+    .icon
+      &.iconfont
+        font-size .25rem
+        color: $color-background-header
+        vertical-align top
     .num
-      font-size .14rem
+      font-size $font-size-medium-x
       font-weight 600
     .text
       line-height .2rem
-      font-size .14rem
+      font-size $font-size-medium
       ellipsis()
       color $color-text-d
 </style>

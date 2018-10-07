@@ -9,7 +9,8 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueLazyload from 'vue-lazyload'
 
 import '@/assets/css/index.styl'
-import 'css/frozenui.css'
+import 'css/weui.css'
+import 'css/common.styl'
 import 'swiper/dist/css/swiper.css'
 import 'css/iconfont.css'
 

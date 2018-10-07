@@ -49,6 +49,7 @@ export default {
   .swiper-wrap
     width 100%
     height 0
+    margin-top 44px
     overflow hidden
     padding-bottom 46%
     .swiper-slide

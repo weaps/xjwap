@@ -107,6 +107,7 @@ export default {
       padding-right .12rem
       img
         width .3rem
+        vertical-align top
     ul
       flex 1
       position relative

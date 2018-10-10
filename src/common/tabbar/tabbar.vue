@@ -1,6 +1,6 @@
 <template>
   <div class="weui-tabbar">
-    <router-link class="weui-tabbar__item weui-bar__item_on" to="/">
+    <router-link class="weui-tabbar__item" to="/">
       <span style="display: inline-block;position: relative;">
         <div class="weui-tabbar__icon">
           <i class="icon iconfont icon-home"></i>
@@ -47,6 +47,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import "~css/variable.styl"
 .weui-tabbar
   display flex
   position fixed
@@ -72,8 +73,8 @@ export default {
       line-height 1.8
     .weui-tabbar__icon
       display inline-block
-      width 30px
-      height 30px
+      width 33px
+      height 33px
       .icon
         font-size .3rem
       .publish
@@ -91,6 +92,13 @@ export default {
         .icon
           font-size .2rem
           color #ffffff
+    &.router-link-exact-active
+      .weui-tabbar__label
+        color: $color-background-header
+        font-weight 700
+      .weui-tabbar__icon
+        .icon
+          color: $color-background-header
 .weui-badge {
   display: inline-block;
   padding: .15em .4em;
